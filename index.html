@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://kit.fontawesome.com/9646ea3e2c.js" crossorigin="anonymous"></script>
+    <title>MariniGo</title>
+</head>
+<body>
+    <header id="header" style="position: fixed; z-index: 200; width: 100%;">
+        <div class="px-3 py-2">
+          <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                <img id="headerImg" src="./img/logo-marinigo-final-16-removebg-preview.png" style="width: 150px; height: 40px;" alt="">
+              </a>
+    
+              <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                <li>
+                  <a id="homeLink" href="#" class="nav-link" style="text-align: center; font-size: small; color: #4BEFC4; font-size: large;">
+                    <lord-icon
+                        id="home1"
+                        src="https://cdn.lordicon.com/igpbsrza.json"
+                        trigger="morph"
+                        colors="primary:#0A1940"
+                        style="width:30px;height:30px;display: none;">
+                    </lord-icon>
+                    <lord-icon
+                        id="home2"
+                        src="https://cdn.lordicon.com/igpbsrza.json"
+                        trigger="morph"
+                        colors="primary:#4BEFC4"
+                        style="width:30px;height:30px">
+                    </lord-icon><br>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link" style="text-align: center; font-size: small; color: white; font-size: large;">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/xulniijg.json"
+                        trigger="morph"
+                        colors="primary:white"
+                        style="width:30px;height:30px">
+                    </lord-icon><br>
+                    Serviços
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link" style="text-align: center; font-size: small; color: white; font-size: large;">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/biwxmlnf.json"
+                        trigger="morph"
+                        colors="primary:white"
+                        style="width:30px;height:30px">
+                    </lord-icon><br>
+                    Sobre
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link" style="text-align: center; font-size: small; color: white; font-size: large;">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/iicmtpsq.json"
+                        trigger="morph"
+                        colors="primary:white"
+                        style="width:30px;height:30px">
+                    </lord-icon><br>
+                    Contato
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <button type="button" id="btn-wpp"><img src="./img/whatsapp.png" alt=""></button>
+      <section id="carrousel" style="position: relative; z-index: 199;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="100vh" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#000"></rect>
+                    <text x="50%" y="50%" fill="#444" dy=".3em">Primeiro slide</text>
+                </svg>
+              </div>
+              <div class="carousel-item">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="100vh" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#222"></rect>
+                    <text x="50%" y="50%" fill="#444" dy=".3em">Segundo slide</text>
+                </svg>
+              </div>
+              <div class="carousel-item">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="100vh" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#666"></rect>
+                    <text x="50%" y="50%" fill="#444" dy=".3em">Terceiro slide</text>
+                </svg>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section>
+      <section id="servicos" class="position-relative">
+        <div class="container" >
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96"></rect>
+                        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Imagem 1</text>
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">Titulo do card</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum suscipit justo sit amet rhoncus.</p>
+                      <a href="#" class="btn btn-primary">Botão</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96"></rect>
+                        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Imagen 2</text>
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">Titulo do card</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum suscipit justo sit amet rhoncus.</p>
+                      <a href="#" class="btn btn-primary">Botão</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96"></rect>
+                        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Imagen 3</text>
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">Titulo do card</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum suscipit justo sit amet rhoncus.</p>
+                      <a href="#" class="btn btn-primary">Botão</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96"></rect>
+                        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Imagen 4</text>
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title">Titulo do card</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum suscipit justo sit amet rhoncus.</p>
+                      <a href="#" class="btn btn-primary">Botão</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            
+          </div>
+      </section>
+      <section id="sobre">
+        <div class="section">
+            <div class="container">
+              <div class="row">
+                <div class="ml-auto mr-auto">
+                  <h4 class="description text-center">Nulla hendrerit, ex quis vestibulum tincidunt, sapien elit porta elit, eu hendrerit neque turpis 
+                      in mauris. Nulla semper euismod odio eu tempus. Maecenas quis ex consectetur, commodo nisi non, egestas enim. 
+                      Aliquam lacinia lorem nec massa vulputate fermentum.</h4>
+                </div>
+              </div>
+              <div class="features-1">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="info">
+                      <div class="icon icon-rose">
+                        <svg class="bd-placeholder-img card-img-top" width="50" height="80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Imagem 1</text>
+                        </svg>
+                      </div>
+                      <h4 class="info-title">Titulo 1</h4>
+                      <p>Sed nec nibh non lectus ornare pulvinar. Mauris metus felis, maximus vel lacinia ut, imperdiet nec libero. Nullam ut finibus augue.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="info">
+                      <div class="icon icon-info">
+                        <svg class="bd-placeholder-img card-img-top" width="50" height="80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Imagem 2</text>
+                        </svg>
+                      </div>
+                      <h4 class="info-title">Titulo 2</h4>
+                      <p>Sed nec nibh non lectus ornare pulvinar. Mauris metus felis, maximus vel lacinia ut, imperdiet nec libero. Nullam ut finibus augue.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="info">
+                      <div class="icon icon-success">
+                        <svg class="bd-placeholder-img card-img-top" width="50" height="80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#868e96"></rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Imagem 3</text>
+                        </svg>
+                      </div>
+                      <h4 class="info-title">Titulo 3</h4>
+                      <p>Sed nec nibh non lectus ornare pulvinar. Mauris metus felis, maximus vel lacinia ut, imperdiet nec libero. Nullam ut finibus augue.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="contato">
+        
+      </section>
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>Endereço</h6>
+              <p><i class="fas fa-map-marker-alt"></i>1010 Avenue, sw 54321, chandigarh</p>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Contatos</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/about/">Contato 1</a></li>
+                <li><a href="http://scanfcode.com/contact/">Contato 2</a></li>
+                <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contato 3</a></li>
+                <li><a href="http://scanfcode.com/privacy-policy/">Contato 4</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; <a href="#">MariniGo</a> 2022 Todos os direitos reservados 
+           .
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+    <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("header").style.backgroundColor = "#49EEC4";
+            document.getElementById("homeLink").style.color = "#0A1940";
+            document.getElementById("headerImg").setAttribute("src", "./img/logo-marinigo-final-07-removebg-preview.png");
+            document.getElementById("home1").style.display = "";
+            document.getElementById("home2").style.display = "none";
+          } else {
+            document.getElementById("header").style.backgroundColor = "transparent";
+            document.getElementById("homeLink").style.color = "#49EEC4";
+            document.getElementById("headerImg").setAttribute("src", "./img/logo-marinigo-final-16-removebg-preview.png");
+            document.getElementById("home1").style.display = "none";
+            document.getElementById("home2").style.display = "";
+          }
+        }
+        </script>
+</body>
+</html>
