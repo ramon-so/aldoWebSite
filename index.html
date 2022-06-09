@@ -1,330 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-    <script src="js/bootstrap/bootstrap.js"></script>
-    <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="https://kit.fontawesome.com/9646ea3e2c.js" crossorigin="anonymous"></script>
-    <title>MariniGo</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d6a20dd980.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <title>Marine-Go</title>
 </head>
 <body>
-    <header id="header" style="position: fixed; z-index: 200; width: 100%;">
-        <div class="px-3 py-2">
-          <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-              <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                <img id="headerImg" src="./img/logo-marinigo-final-16-removebg-preview.png" style="width: 150px; height: 40px;" alt="">
-              </a>
-    
-              <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                <li>
-                  <a id="homeLink" href="#" class="nav-link" style="text-align: center; font-size: small; color: #4BEFC4; font-size: large;">
-                    <lord-icon
-                        id="home1"
-                        src="https://cdn.lordicon.com/igpbsrza.json"
-                        trigger="morph"
-                        colors="primary:#0A1940"
-                        style="width:30px;height:30px;display: none;">
-                    </lord-icon>
-                    <lord-icon
-                        id="home2"
-                        src="https://cdn.lordicon.com/igpbsrza.json"
-                        trigger="morph"
-                        colors="primary:#4BEFC4"
-                        style="width:30px;height:30px">
-                    </lord-icon><br>
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link" style="text-align: center; font-size: small; color: white; font-size: large;">
-                    <lord-icon
-                        src="https://cdn.lordicon.com/xulniijg.json"
-                        trigger="morph"
-                        colors="primary:white"
-                        style="width:30px;height:30px">
-                    </lord-icon><br>
-                    Serviços
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link" style="text-align: center; font-size: small; color: white; font-size: large;">
-                    <lord-icon
-                        src="https://cdn.lordicon.com/biwxmlnf.json"
-                        trigger="morph"
-                        colors="primary:white"
-                        style="width:30px;height:30px">
-                    </lord-icon><br>
-                    Sobre
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link" style="text-align: center; font-size: small; color: white; font-size: large;">
-                    <lord-icon
-                        src="https://cdn.lordicon.com/iicmtpsq.json"
-                        trigger="morph"
-                        colors="primary:white"
-                        style="width:30px;height:30px">
-                    </lord-icon><br>
-                    Contato
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </header>
-      <button type="button" id="btn-wpp"><img src="./img/whatsapp.png" alt=""></button>
-      <section id="carrousel" style="position: relative; z-index: 199;">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./img/temp/imagens_site1/blog_atualizacoes_periodicas.jpg" style="width: 100vw; height: 100vh;" alt="">
-                <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="100vh" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#000"></rect>
-                    <text x="50%" y="50%" fill="#444" dy=".3em">Primeiro slide</text>
-                </svg> -->
-              </div>
-              <div class="carousel-item">
-                <img src="./img/temp/imagens_site1/programador-em-desenvolvimento-desenvolvimento-design-de-sites-e-tecnologias-de-codificacao-trabalhando-no-escritorio-da-empresa-de-software_18497-1234.jpg" style="width: 100vw; height: 100vh;" alt="">
-                <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="100vh" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#222"></rect>
-                    <text x="50%" y="50%" fill="#444" dy=".3em">Segundo slide</text>
-                </svg> -->
-              </div>
-              <div class="carousel-item">
-                <img src="./img/temp/imagens_site1/botao-atualizar-closeup-dedo-prestes-a-pressionar-um-botao-atualizar-o-conceito-de-versao-do-software-sincronizacao-e-operacao-entre-dispositivos_127544-600.jpg" style="width: 100vw; height: 100vh;" alt="">
-                <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="100vh" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#666"></rect>
-                    <text x="50%" y="50%" fill="#444" dy=".3em">Terceiro slide</text>
-                </svg> -->
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-      </section>
-      <section id="quemSomos">
-          <h2 style="text-align: center; margin-top: 100px; margin-bottom: 50px;">QUEM SOMOS</h2>
-          <div class="container px-4">
-            <div class="row gx-5">
-              <div class="col">
-               <img src="./img/temp/240_F_219923966_NELiznQ8OaFYbQsx6qssD8yxaJpetLl7.jpg" style="width: 100%; height: 50vh;" alt="">
-              </div>
-              <div class="col">
-                <h3 style="padding-top: 50px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-                <p style="padding-top: 50px;">Ut feugiat erat ac felis consequat, eu tristique purus condimentum. Aliquam ut orci tristique, porttitor dui vitae, fermentum libero. Ut semper malesuada augue id scelerisque. Integer urna mauris, efficitur sit amet condimentum eget, molestie quis elit. Nunc commodo, justo facilisis fermentum aliquet, arcu mauris consectetur dolor, id laoreet augue tellus eget felis. Aenean vel ornare risus. Ut tempor felis suscipit lorem posuere, sed vestibulum est consectetur.</p>
-              </div>
-            </div>
-          </div>
-      </section>
-      <section id="servicos">
-        <div class="container" >
-            <div class="row">
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-
-                    <img src="./img/temp/imagens_site1/jovens-na-sala-de-aula-com-computadores_23-2147663656.jpg" style="width: 100%; height: 200px" alt="">
-
-                    <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect>
-                        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Imagem 1</text>
-                    </svg> -->
-                    <div class="card-body">
-                      <h5 class="card-title">Titulo do card</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum suscipit justo sit amet rhoncus.</p>
-                      <a href="#" class="btn btn-primary">Botão</a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                  <img src="./img/temp/imagens_site1/blog_imagem_principal.jpg" style="width: 100%; height: 200px" alt="">
-                    <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect>
-                        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Imagen 2</text>
-                    </svg> -->
-                    <div class="card-body">
-                      <h5 class="card-title">Titulo do card</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum suscipit justo sit amet rhoncus.</p>
-                      <a href="#" class="btn btn-primary">Botão</a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                  <img src="./img/temp/imagens_site1/empresario-de-interface-de-programacao-de-aplicativo-api-apontando-um-icone-visual_35674-764.jpg" style="width: 100%; height: 200px" alt="">
-                    <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect>
-                        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Imagen 3</text>
-                    </svg> -->
-                    <div class="card-body">
-                      <h5 class="card-title">Titulo do card</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum suscipit justo sit amet rhoncus.</p>
-                      <a href="#" class="btn btn-primary">Botão</a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                  <img src="./img/temp/imagens_site1/sistema-de-software-erp-enterprise-management-management-para-plano-de-recursos-de-negocios_31965-7067.jpg" style="width: 100%; height: 200px" alt="">
-                    <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#868e96"></rect>
-                        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Imagen 4</text>
-                    </svg> -->
-                    <div class="card-body">
-                      <h5 class="card-title">Titulo do card</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum suscipit justo sit amet rhoncus.</p>
-                      <a href="#" class="btn btn-primary">Botão</a>
-                    </div>
-                  </div>
-              </div>
-            </div>
-            
-          </div>
-      </section>
-      <section id="sobre">
-        <div class="section">
-            <div class="container">
-              <div class="row">
-                <div class="ml-auto mr-auto">
-                  <h4 class="description text-center">Nulla hendrerit, ex quis vestibulum tincidunt, sapien elit porta elit, eu hendrerit neque turpis 
-                      in mauris. Nulla semper euismod odio eu tempus. Maecenas quis ex consectetur, commodo nisi non, egestas enim. 
-                      Aliquam lacinia lorem nec massa vulputate fermentum.</h4>
-                </div>
-              </div>
-              <div class="features-1">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="info">
-                      <div class="icon icon-rose">
-                        <img src="./img/temp/240_F_309739655_KfimwJQff4YGc4btes28dLzQ4rVc6y8H.jpg" style="width: 100%; height: 80px; border-radius: 5px 5px 0 0;" alt="">
-                        <!-- <svg class="bd-placeholder-img card-img-top" width="50" height="80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#868e96"></rect>
-                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Imagem 1</text>
-                        </svg> -->
-                      </div>
-                      <h4 class="info-title">Titulo 1</h4>
-                      <p>Sed nec nibh non lectus ornare pulvinar. Mauris metus felis, maximus vel lacinia ut, imperdiet nec libero. Nullam ut finibus augue.</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="info">
-                      <div class="icon icon-info">
-                        <img src="./img/temp/240_F_309739655_KfimwJQff4YGc4btes28dLzQ4rVc6y8H.jpg" style="width: 100%; height: 80px; border-radius: 5px 5px 0 0;" alt="">
-                        <!-- <svg class="bd-placeholder-img card-img-top" width="50" height="80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#868e96"></rect>
-                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Imagem 2</text>
-                        </svg> -->
-                      </div>
-                      <h4 class="info-title">Titulo 2</h4>
-                      <p>Sed nec nibh non lectus ornare pulvinar. Mauris metus felis, maximus vel lacinia ut, imperdiet nec libero. Nullam ut finibus augue.</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="info">
-                      <div class="icon icon-success">
-                        <img src="./img/temp/240_F_309739655_KfimwJQff4YGc4btes28dLzQ4rVc6y8H.jpg" style="width: 100%; height: 80px; border-radius: 5px 5px 0 0;" alt="">
-                        <!-- <svg class="bd-placeholder-img card-img-top" width="50" height="80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#868e96"></rect>
-                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Imagem 3</text>
-                        </svg> -->
-                      </div>
-                      <h4 class="info-title">Titulo 3</h4>
-                      <p>Sed nec nibh non lectus ornare pulvinar. Mauris metus felis, maximus vel lacinia ut, imperdiet nec libero. Nullam ut finibus augue.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
-      <section id="contato">
-        
-      </section>
-      <footer class="site-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-6">
-              <h6>Endereço</h6>
-              <p><i class="fas fa-map-marker-alt"></i>1010 Avenue, sw 54321, chandigarh</p>
-            </div>
+  <section>
+    <nav>
+      <div class="logo" data-aos="fade-right"></div>
+      <div>
+        <ul data-aos="fade-left">
+          <li><a href="#first">Inicio</a></li>
+          <li><a href="#second">Quem Somos</a></li>
+          <li><a href="#third">Serviços</a></li>
+          <li><a href="#last">Entre em contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="first" class="heroblock" data-aos="fade-up">
+      <div>
+        <h1 class="text"></h1>
+        <div class="seemore">FAÇA UM ORÇAMENTO</div>
+      </div>
+      <div class="centerd"><span></span></div>
+    </div>
+  </section>
   
-            <div class="col-xs-6 col-md-3">
-              <h6>Contatos</h6>
-              <ul class="footer-links">
-                <li><a href="http://scanfcode.com/about/">Contato 1</a></li>
-                <li><a href="http://scanfcode.com/contact/">Contato 2</a></li>
-                <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contato 3</a></li>
-                <li><a href="http://scanfcode.com/privacy-policy/">Contato 4</a></li>
-              </ul>
-            </div>
-          </div>
-          <hr>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text">Copyright &copy; <a href="#">MariniGo</a> 2022 Todos os direitos reservados 
-           .
-              </p>
-            </div>
-  
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <ul class="social-icons">
-                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-              </ul>
-            </div>
-          </div>
-        </div>
-  </footer>
-    <script>
-        // When the user scrolls down 50px from the top of the document, resize the header's font size
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            document.getElementById("header").style.backgroundColor = "#49EEC4";
-            document.getElementById("homeLink").style.color = "#0A1940";
-            document.getElementById("headerImg").setAttribute("src", "./img/logo-marinigo-final-07-removebg-preview.png");
-            document.getElementById("home1").style.display = "";
-            document.getElementById("home2").style.display = "none";
-          } else {
-            document.getElementById("header").style.backgroundColor = "transparent";
-            document.getElementById("homeLink").style.color = "#49EEC4";
-            document.getElementById("headerImg").setAttribute("src", "./img/logo-marinigo-final-16-removebg-preview.png");
-            document.getElementById("home1").style.display = "none";
-            document.getElementById("home2").style.display = "";
-          }
-        }
-        </script>
+  <div id="second" class="twoblocks">
+    <div>
+      <h1>Quem Somos </h1>
+      <h5>A Marini-Go iniciou em 2007 contando hoje com profissionais com mais de 20 anos de experiência em sistemas Totvs Protheus e com atuação em todo território brasileiro. Estamos aqui para lhe prestar os melhores serviços possíveis, para que você sinta parceria e confiança nas tarefas executadas por nossos consultores. Trabalhamos de forma colaborativa e cooperativa para garantir que você obtenha os melhores serviços, independentemente das suas necessidades. Nós, da Marini-GO, estamos empenhados em otimizar os processos de nossos clientes com um atendimento de qualidade.</h5>
+    </div>
+    <div class="line" data-aos="zoom-out"></div>
+    <div>
+      <h1>Metodologia Marini-GO</h1>
+      <h5>A Marini-GO utiliza metodologias nos seus diversos serviços, UX para definição de funcionalidades para interação com usuários, SCRUM para gerenciamento dos projetos, PDCA para análise de processos e melhoria contínua e outras metodologias de implantação e desenvolvimento conforme o produto/serviço a ser executado.</h5>
+    </div>
+  </div>
+  <div class="twoblocks">
+    <div>
+      <h1>Valores e objetivos </h1>
+      <h5>Estamos aqui para lhe prestar os melhores serviços possíveis, para que você sinta parceria e confiança nas tarefas executadas. Trabalhamos de forma colaborativa e cooperativa para garantir que você obtenha os melhores serviços, independentemente das suas necessidades. Nós, da Marini-GO, estamos empenhados em otimizar os processos de nossos clientes com um atendimento de qualidade.</h5>
+    </div>
+    <div class="line" data-aos="zoom-out"></div>
+    <div>
+      <h1>Metodologia de Implantação</h1>
+      <h5>Utilizamos ferramentas e práticas de mercado para o controle de implantação de ambiente, sistemas e módulos nas etapas de levantamento, detalhamento, planejamento, execução, validação, treinamento, acompanhamento Go Live, Status Report nos principais entregáveis.</h5>
+    </div>
+  </div>
+
+  <div id="third" class="sixblocks">
+    <div class="container">
+      <div data-aos="fade-up" data-aos-delay="150">
+        <div class="pic"><i class="fa-solid fa-handshake-angle"></i></div>
+        <h4>Análise de Processos</h4>
+        <h5>Analisamos os processos para redução de custos, otimização das tarefas e maior qualidade das informações.</h5>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="250">
+        <div class="pic"><i class="fa-solid fa-wrench"></i></div>
+        <h4>Suporte</h4>
+        <h5>Atendimento presencial, remoto, e-mail e Chat sobre problemas ou dúvidas na utilização dos sistemas e serviços. Sustentação aos usuários e processos tanto nos sistemas quanto na área de negócio proporcionando um suporte ágil e eficaz.</h5>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="350">
+        <div class="pic"><i class="fa-solid fa-business-time"></i></div>
+        <h4>Customização</h4>
+        <h5>Ajudamos seu negócio a ser mais competitivo com customizações especificas nos sistemas seja em rotinas, integração de sistemas, plataformas Web, Mobile e Business Intelligence. Personalizações novas ou revisão das mesmas são de grande valor de investimento para o seu negócio.</h5>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="450">
+        <div class="pic"><i class="fa-solid fa-toolbox"></i></div>
+        <h4>Implantação</h4>
+        <h5>Implantação de sistemas Protheus e RM em um ambiente inicial, implantação de módulos e processos, levantamento, definição e configuração para adequação as necessidades e processos. Implantação presencial com envolvimento com Keyuser e remota proporcionando redução de custos.</h5>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="550">
+        <div class="pic"><i class="fa-solid fa-magnifying-glass-dollar"></i></div>
+        <h4>Treinamento</h4>
+        <h5>Ministramos treinamentos presenciais e remoto para todos os envolvidos nos processos de forma ágil e construtivista proporcionando uma maior participação e aprendizado. Os treinamentos são efetuados de forma personalizada para cada área e nível hierárquico seja da T.I. ou de negócio.</h5>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="650">
+        <div class="pic"><i class="fa-solid fa-binoculars"></i></div>
+        <h4>Atualização de Ambiente</h4>
+        <h5>Realizamos atualização de releases, Kernel do Protheus e RM, atualizações de legislação, correções e melhorias nos sistemas. Alguns sistemas de apoio ao processo também fazem parte das atualizações constantes. Utilizamos as boas práticas de GMUD para update no ambiente.</h5>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="750">
+        <div class="pic"><i class="fa-solid fa-toolbox"></i></div>
+        <h4>Otimização de Processos</h4>
+        <h5>Uma análise nos processos para confirmação do bom andamento da execução das tarefas é obrigatória principalmente identificar oportunidades de melhoria e redução de custos\nAs mudanças constantes de mercado geram necessidade de renovação constante, auxiliamos nesta análise e ferramentas seja em sistemas ou procedimentos.</h5>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="850">
+        <div class="pic"><i class="fa-solid fa-magnifying-glass-dollar"></i></div>
+        <h4>Ferramentas</h4>
+        <h5>Possuímos ferramentas de desenvolvimento que auxiliam a integração de sistemas ERP, Web e Mobile\nContamos com desenvolvedores em Advpl, Fluig, Java, PHP, Mobile e DBA em Microsoft SQL e Oracle.</h5>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="950">
+        <div class="pic"><i class="fa-solid fa-binoculars"></i></div>
+        <h4>Gerenciamento e Monitoramento</h4>
+        <h5>Nossa equipe faz o gerenciamento e monitoramento do seu ambiente dos sistemas de software\nRepresentamos a T.I de sua empresa nas ocorrências, atendimento aos usuários, operacionalização dos sistemas, melhorias do ambiente, performance, inovação de sistemas e tecnologias.</h5>
+      </div>
+    </div>
+  </div>
+
+  <div id="last" class="textfade" data-aos="fade-up">
+    <div class="container">
+      <div><h2>Informações de Contato:</h2></div>
+      <div>
+        <div><a target="_blank" href="mailto:contato@marini-go.com.br">contato@marini-go.com.br</a></div>
+        <div><a target="_blank" href="https://www.linkedin.com/company/14059219"><i class="fa-brands fa-linkedin"></i></a></div>
+        <div><a target="_blank" href="https://www.facebook.com/ConsultoriaMariniGO"><i class="fa-brands fa-facebook-f"></i></a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/js.js"></script>
 </body>
 </html>
