@@ -6,48 +6,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/d6a20dd980.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/index.css">
-  <title>Marine-Go</title>
+  <title>Marini-Go</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
   <section>
     <nav>
       <div class="logo" data-aos="fade-right"></div>
-      <div>
+      <div id="menuGrande">
         <ul data-aos="fade-left">
           <li><a href="#first">Inicio</a></li>
           <li><a href="#second">Quem Somos</a></li>
           <li><a href="#third">Serviços</a></li>
-          <li><a href="#last">Entre em contato</a></li>
+          <li><a target="_blank" href="https://api.whatsapp.com/send?phone=5511992179300">Entre em contato</a></li>
         </ul>
       </div>
+      <div id="menuPequeno">
+        <ul data-aos="fade-left">
+          <li><a id="menuIcon" href="javascript:myFunction()"><i class="fa fa-bars"></i></a></li>
+        </ul>
+      </div>
+      
     </nav>
+    <div id="list" style="display: none;">
+      <ul>
+        <li><a href="#first" onclick="myFunction()">Inicio</a></li>
+          <li><a href="#second" onclick="myFunction()">Quem Somos</a></li>
+          <li><a href="#third" onclick="myFunction()">Serviços</a></li>
+          <li><a target="_blank" href="https://api.whatsapp.com/send?phone=5511992179300">Entre em contato</a></li>
+      </ul>
+    </div>
     <div id="first" class="heroblock" data-aos="fade-up">
       <div>
-        <h1 class="text"></h1>
-        <div class="seemore">FAÇA UM ORÇAMENTO</div>
+        <h1 id="text" class="text"></h1>
+        <div class="seemore" onclick="orca()">FAÇA UM ORÇAMENTO</div>
       </div>
       <div class="centerd"><span></span></div>
     </div>
   </section>
   
   <div id="second" class="twoblocks">
-    <div>
+    <div class="desc">
       <h1>Quem Somos </h1>
       <h5>A Marini-Go iniciou em 2007 contando hoje com profissionais com mais de 20 anos de experiência em sistemas Totvs Protheus e com atuação em todo território brasileiro. Estamos aqui para lhe prestar os melhores serviços possíveis, para que você sinta parceria e confiança nas tarefas executadas por nossos consultores. Trabalhamos de forma colaborativa e cooperativa para garantir que você obtenha os melhores serviços, independentemente das suas necessidades. Nós, da Marini-GO, estamos empenhados em otimizar os processos de nossos clientes com um atendimento de qualidade.</h5>
     </div>
     <div class="line" data-aos="zoom-out"></div>
-    <div>
+    <div class="somi">
+      <img class="tbImg" src="./img/qs.jpg" alt="" srcset="">
+    </div>
+  </div>
+  <div id="second" class="twoblocks">
+    <div class="somi">
+      <img class="tbImg" src="./img/mt.jpg" alt="" srcset="">
+    </div>
+    <div class="line" data-aos="zoom-out"></div>
+    <div class="desc">
       <h1>Metodologia Marini-GO</h1>
       <h5>A Marini-GO utiliza metodologias nos seus diversos serviços, UX para definição de funcionalidades para interação com usuários, SCRUM para gerenciamento dos projetos, PDCA para análise de processos e melhoria contínua e outras metodologias de implantação e desenvolvimento conforme o produto/serviço a ser executado.</h5>
     </div>
   </div>
   <div class="twoblocks">
-    <div>
+    <div class="desc">
       <h1>Valores e objetivos </h1>
       <h5>Estamos aqui para lhe prestar os melhores serviços possíveis, para que você sinta parceria e confiança nas tarefas executadas. Trabalhamos de forma colaborativa e cooperativa para garantir que você obtenha os melhores serviços, independentemente das suas necessidades. Nós, da Marini-GO, estamos empenhados em otimizar os processos de nossos clientes com um atendimento de qualidade.</h5>
     </div>
     <div class="line" data-aos="zoom-out"></div>
-    <div>
+    <div class="somi">
+      <img class="tbImg" src="./img/ob.jpg" alt="" srcset="">
+    </div>
+  </div>
+  <div class="twoblocks">
+    <div class="somi">
+      <img class="tbImg" src="./img/im.jpg" alt="" srcset="">
+    </div>
+    <div class="line" data-aos="zoom-out"></div>
+    <div class="desc">
       <h1>Metodologia de Implantação</h1>
       <h5>Utilizamos ferramentas e práticas de mercado para o controle de implantação de ambiente, sistemas e módulos nas etapas de levantamento, detalhamento, planejamento, execução, validação, treinamento, acompanhamento Go Live, Status Report nos principais entregáveis.</h5>
     </div>
@@ -56,42 +90,42 @@
   <div id="third" class="sixblocks">
     <div class="container">
       <div data-aos="fade-up" data-aos-delay="150">
-        <div class="pic"><i class="fa-solid fa-handshake-angle"></i></div>
+        <div class="pic"><i class="fa-solid fa-magnifying-glass-dollar"></i></div>
         <h4>Análise de Processos</h4>
         <h5>Analisamos os processos para redução de custos, otimização das tarefas e maior qualidade das informações.</h5>
       </div>
       <div data-aos="fade-up" data-aos-delay="250">
-        <div class="pic"><i class="fa-solid fa-wrench"></i></div>
+        <div class="pic"><i class="fa-solid fa-handshake-angle"></i></div>
         <h4>Suporte</h4>
         <h5>Atendimento presencial, remoto, e-mail e Chat sobre problemas ou dúvidas na utilização dos sistemas e serviços. Sustentação aos usuários e processos tanto nos sistemas quanto na área de negócio proporcionando um suporte ágil e eficaz.</h5>
       </div>
       <div data-aos="fade-up" data-aos-delay="350">
-        <div class="pic"><i class="fa-solid fa-business-time"></i></div>
+        <div class="pic"><i class="fa-solid fa-wrench"></i></div>
         <h4>Customização</h4>
         <h5>Ajudamos seu negócio a ser mais competitivo com customizações especificas nos sistemas seja em rotinas, integração de sistemas, plataformas Web, Mobile e Business Intelligence. Personalizações novas ou revisão das mesmas são de grande valor de investimento para o seu negócio.</h5>
       </div>
       <div data-aos="fade-up" data-aos-delay="450">
-        <div class="pic"><i class="fa-solid fa-toolbox"></i></div>
+        <div class="pic"><i class="fa-solid fa-clipboard-check"></i></div>
         <h4>Implantação</h4>
         <h5>Implantação de sistemas Protheus e RM em um ambiente inicial, implantação de módulos e processos, levantamento, definição e configuração para adequação as necessidades e processos. Implantação presencial com envolvimento com Keyuser e remota proporcionando redução de custos.</h5>
       </div>
       <div data-aos="fade-up" data-aos-delay="550">
-        <div class="pic"><i class="fa-solid fa-magnifying-glass-dollar"></i></div>
+        <div class="pic"><i class="fa-solid fa-graduation-cap"></i></div>
         <h4>Treinamento</h4>
         <h5>Ministramos treinamentos presenciais e remoto para todos os envolvidos nos processos de forma ágil e construtivista proporcionando uma maior participação e aprendizado. Os treinamentos são efetuados de forma personalizada para cada área e nível hierárquico seja da T.I. ou de negócio.</h5>
       </div>
       <div data-aos="fade-up" data-aos-delay="650">
-        <div class="pic"><i class="fa-solid fa-binoculars"></i></div>
+        <div class="pic"><i class="fa-solid fa-gears"></i></div>
         <h4>Atualização de Ambiente</h4>
         <h5>Realizamos atualização de releases, Kernel do Protheus e RM, atualizações de legislação, correções e melhorias nos sistemas. Alguns sistemas de apoio ao processo também fazem parte das atualizações constantes. Utilizamos as boas práticas de GMUD para update no ambiente.</h5>
       </div>
       <div data-aos="fade-up" data-aos-delay="750">
-        <div class="pic"><i class="fa-solid fa-toolbox"></i></div>
+        <div class="pic"><i class="fa-solid fa-clock"></i></div>
         <h4>Otimização de Processos</h4>
         <h5>Uma análise nos processos para confirmação do bom andamento da execução das tarefas é obrigatória principalmente identificar oportunidades de melhoria e redução de custos\nAs mudanças constantes de mercado geram necessidade de renovação constante, auxiliamos nesta análise e ferramentas seja em sistemas ou procedimentos.</h5>
       </div>
       <div data-aos="fade-up" data-aos-delay="850">
-        <div class="pic"><i class="fa-solid fa-magnifying-glass-dollar"></i></div>
+        <div class="pic"><i class="fa-solid fa-toolbox"></i></div>
         <h4>Ferramentas</h4>
         <h5>Possuímos ferramentas de desenvolvimento que auxiliam a integração de sistemas ERP, Web e Mobile\nContamos com desenvolvedores em Advpl, Fluig, Java, PHP, Mobile e DBA em Microsoft SQL e Oracle.</h5>
       </div>
@@ -105,15 +139,35 @@
 
   <div id="last" class="textfade" data-aos="fade-up">
     <div class="container">
-      <div><h2>Informações de Contato:</h2></div>
       <div>
-        <div><a target="_blank" href="mailto:contato@marini-go.com.br">contato@marini-go.com.br</a></div>
-        <div><a target="_blank" href="https://www.linkedin.com/company/14059219"><i class="fa-brands fa-linkedin"></i></a></div>
-        <div><a target="_blank" href="https://www.facebook.com/ConsultoriaMariniGO"><i class="fa-brands fa-facebook-f"></i></a></div>
+        <h3>Informações de Contato:</h3>
+        <div><p>
+          <a class="espaco" target="_blank" href="mailto:contato@marini-go.com.br">contato@marini-go.com.br</a>  <br><br>
+          <a class="espaco" style="font-size: 50px;" target="_blank" href="https://www.facebook.com/ConsultoriaMariniGO"><i class="fa-brands fa-facebook-f"></i></a>
+          <a class="espaco" style="font-size: 50px;" target="_blank" href="https://www.linkedin.com/company/14059219"><i class="fa-brands fa-linkedin"> </i>  </a>  
+          
+        </p></div>
+      </div>
+      <div>
+        
       </div>
     </div>
   </div>
+  <img src="./img/wpp.svg" onclick="orca()" id="wpp" alt="">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="js/js.js"></script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("list");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    function orca(){
+      window.open('https://api.whatsapp.com/send?phone=5511992179300', '_blank');
+    }
+    </script>
 </body>
 </html>

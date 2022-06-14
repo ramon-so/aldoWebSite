@@ -18,7 +18,7 @@ body {
   color: #4befc4;
 }
 section {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: #bbb;
   background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.6)), url(./../img/Customizacao.jpg) 50% 50%/cover;
@@ -40,16 +40,55 @@ section nav {
   font-weight: 300;
   padding: 15px 30px;
   margin: 0 auto;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
 }
+section #list {
+  transition: all 0.6s 0.2s;
+  text-transform: uppercase;
+  font-size: 80%;
+  font-weight: 300;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  margin-top: 70px;
+  background-color: rgba(225,225,225,0);
+}
+section #list ul{
+  list-style: none;
+  width: 100vw;
+}
+section #list ul li{
+  list-style: none;
+  width: 100vw;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(225, 225, 225, 0.2);
+  border-bottom: 1px solid #262626;
+  font-size: 30px;
+  font-family: Raleway;
+}
+.li{
+  background-color: rgba(225, 225, 225, 0.8)!important;
+}
+#menuIcon{
+  font-size: 20px;
+}
+section #list ul li a{
+  color: white;
+  text-decoration: none;
+}
 section nav .logo {
   background: #555;
-  background: url(./../img/logo-marinigo.png) no-repeat 50% 50%/contain;
-  min-width: 60px;
+  background: url(./../img/logo-marinigo.png) no-repeat 80% 80%/contain;
+  min-width: 250px;
   height: 60px;
 }
 section nav div ul {
@@ -70,7 +109,7 @@ section nav div ul li a {
 section .heroblock {
   margin: 0 auto;
   padding: 100px 30px;
-  max-width: 1200px;
+  max-width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -106,9 +145,13 @@ section .heroblock .centerd span {
   background: url(https://scontent-arn2-1.cdninstagram.com/vp/2d090fa7ac7550192d52d0a45c8befa4/5B9A3FEF/t51.2885-15/e35/19534193_1073400406125724_5398181761110769664_n.jpg) no-repeat 50% 50%/contain;
 }
 
+.twoblocks{
+  font-size: 18px;
+}
+
 .middle-block {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 100vw;
   background: #fff;
   position: relative;
   top: -5em;
@@ -154,13 +197,7 @@ section .heroblock .centerd span {
   margin-bottom: 2em;
 }
 
-.twoblocks {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 7em 0;
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .twoblocks div:nth-child(1) {
   flex: 1;
   padding: 0 40px 0 30px;
@@ -172,7 +209,7 @@ section .heroblock .centerd span {
 .twoblocks div.line {
   width: 2px;
   height: 240px;
-  background: #bbb;
+  background: transparent;
 }
 .twoblocks div:nth-child(3) {
   flex: 1;
@@ -183,23 +220,16 @@ section .heroblock .centerd span {
   margin-bottom: 1em;
 }
 
-.sixblocks {
-  max-width: 1200px;
-  margin: 2em auto;
+.twoblocks h5{
+  font-size: 17px;
 }
+
 .sixblocks .container {
   display: flex;
   flex-wrap: wrap;
   color: #444;
 }
-.sixblocks .container div {
-  text-align: center;
-  flex: 1;
-  min-width: 300px;
-  margin: 5px;
-  background: #fff;
-  padding: 30px 1em;
-}
+
 .sixblocks .container div h4 {
   margin: 1em 0;
   font-weight: 800;
@@ -213,9 +243,12 @@ section .heroblock .centerd span {
   font-size: 5em;
   padding: 0;
 }
+#last{
+  padding-left: 10vw;
+}
 
 .textfade {
-  max-width: 1200px;
+  max-width: 100vw;
   margin: 2em auto;
   padding: 3em 0;
   border-bottom: 2px solid #ddd;
@@ -236,4 +269,88 @@ section .heroblock .centerd span {
 }
 .textfade .container div:nth-child(2) div:nth-child(2) {
   margin-left: 0.5em;
+}
+.tbImg{
+  width: 90%;
+  border-radius: 10px;
+}
+.espaco{
+  margin-left: 10px;
+  font-size: x-large;
+}
+@media screen and (min-width: 769px) {
+  #menuGrande{
+    display: "";
+  }
+  #menuPequeno{
+    display: none;
+  }
+  .sixblocks {
+    max-width: 80vw;
+    margin: 2em auto;
+  }
+  .sixblocks .container div {
+    text-align: center;
+    flex: 1;
+    min-width: 35vw;
+    margin: 5px;
+    background: #fff;
+    padding: 30px 1em;
+    overflow: hidden;
+  }
+  .twoblocks {
+    margin: 0 auto;
+    max-width: 80vw;
+    padding: 7em 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px){
+  #menuGrande{
+    display: none;
+  }
+  #menuPequeno{
+    display: "";
+  }
+  .sixblocks {
+    max-width: 100vw;
+    margin: 2em auto;
+  }
+  .sixblocks .container div {
+    text-align: center;
+    flex: 1;
+    min-width: 95vw;
+    margin: 5px;
+    background: #fff;
+    padding: 30px 1em;
+    overflow: hidden;
+  }
+  .twoblocks {
+    margin: 0 auto;
+    width: 100vw;
+    padding: 4em 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .tbImg, .line, .somi{
+    display: none;
+  }
+  .desc{
+    width: 100vw!important;
+  }
+  #last{
+    padding-left: 2vw;
+  }
+}
+#wpp{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+  width:  100px;
+}
+#wpp:hover{
+  cursor: pointer;
 }
